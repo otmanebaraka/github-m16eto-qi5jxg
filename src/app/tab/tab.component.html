@@ -1,0 +1,7 @@
+<div class="tap-header">
+  @for (item of items(); track item.id) {
+    <ng-template
+      [ngTemplateOutlet]="rowTemplate()!"
+      [ngTemplateOutletContext]="{ $implicit: item }"></ng-template>
+  }
+</div>
